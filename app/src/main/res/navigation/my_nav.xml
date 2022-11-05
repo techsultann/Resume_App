@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    android:label="Background"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.resumeapp.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_backgroundFragment"
+            app:destination="@id/backgroundFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_experienceFragment"
+            app:destination="@id/experienceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/backgroundFragment"
+        android:name="com.example.resumeapp.BackgroundFragment"
+        android:label="Background"
+        tools:layout="@layout/fragment_background"/>
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.example.resumeapp.ExperienceFragment"
+        android:label="Experience"
+        tools:layout="@layout/fragment_experience"/>
+    <fragment
+        android:id="@+id/portfolioFragment"
+        android:name="com.example.resumeapp.PortfolioFragment"
+        android:label="fragment_portfolio"
+        tools:layout="@layout/fragment_portfolio"/>
+</navigation>

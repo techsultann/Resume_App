@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Resume App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_of_sultan">Image of sultan</string>
+    <string name="portfolio">portfolio</string>
+    <string name="Name">Abdulsalam Sultan</string>
+    <string name="introduction">Mobile Application Developer \n Student of Lagos State Polytechnic</string>
+    <string name="date">November, 3rd 2022</string>
+    <string name="address">Lagos, Nigeria</string>
+    <string name="number">08133427487</string>
+    <string name="email_address">salamsultan09@gmail.com</string>
+    <string name="experience">Experience</string>
+    <string name="background">Background</string>
+    <string name="interest">Interest</string>
+    <string name="todo">TODO</string>
+    <string name="calendar_icon">calendar icon</string>
+    <string name="git_username">www.github.com/techsultann</string>
+    <string name="about_me">Hello, i am sultan, a student computer engineering \n at Lagos State Polytechnic. I am currently a Mobile developer (kotlin) intern at HNGi9</string>
+</resources>
