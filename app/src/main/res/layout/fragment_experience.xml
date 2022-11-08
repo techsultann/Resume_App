@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ExperienceFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ExperienceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameBackground"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -16,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvWorkExperience"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="16dp"
@@ -23,14 +28,87 @@
         app:cardCornerRadius="15dp"
         app:layout_constraintTop_toBottomOf="@id/frameBackground">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvWorkExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_experience"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vertical_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/primaryColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWorkExperience"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgHng"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/image_of_sultan"
+                android:src="@drawable/img_sultan"
+                app:civ_border_color="@color/primaryTextColor"
+                app:civ_border_width="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/vertical_line"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvHng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/hng"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imgHng"
+                app:layout_constraintTop_toTopOf="@+id/imgHng" />
+
+            <TextView
+                android:id="@+id/tvStack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_developer_intern"
+                app:layout_constraintStart_toStartOf="@+id/tvHng"
+                app:layout_constraintTop_toBottomOf="@+id/tvHng" />
+
+            <TextView
+                android:id="@+id/tvYear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2022_present"
+                app:layout_constraintStart_toStartOf="@+id/tvStack"
+                app:layout_constraintTop_toBottomOf="@+id/tvStack"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@color/primaryColor"
+        android:layout_marginTop="270dp"
+        app:layout_constraintTop_toBottomOf="@id/cvWorkExperience"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
