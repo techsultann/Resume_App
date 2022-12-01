@@ -17,4 +17,16 @@
     <string name="calendar_icon">calendar icon</string>
     <string name="git_username">www.github.com/techsultann</string>
     <string name="about_me">Hello, i am sultan, a student computer engineering \n at Lagos State Polytechnic. I am currently a Mobile developer (kotlin) intern at HNGi9</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="hng">HNG</string>
+    <string name="mobile_developer_intern">Mobile Developer Intern</string>
+    <string name="_2022_present">2022 - Present</string>
+    <string name="education">Education</string>
+    <string name="computer_engineering">Computer Engineering</string>
+    <string name="_2021_2023">2021 - 2023</string>
+    <string name="hng_internship">HNG Internship</string>
+    <string name="skills">Skills</string>
+    <string name="google_skills">Google Digital Skills Fot Africa</string>
+    <string name="digital_marketer">Digital Marketer</string>
+    <string name="settings">Settings</string>
 </resources>
